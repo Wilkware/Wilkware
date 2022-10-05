@@ -1,9 +1,9 @@
-### Hi there 👋
+### Hi there, I'm Heiko 👋
 
 ### 🏆 Github Profile Trophy
-<img width=800 src="https://github-profile-trophy.vercel.app/?username=Wilkware&column=8&margin-w=30"/>
+<img width=800 src="https://github-profile-trophy.vercel.app/?username=Wilkware&column=8&no-frame=true"/>
 <div>
-  <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=Wilkware&count_private=true&include_all_commits=true" />
+  <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=Wilkware&count_private=true&include_all_commits=true&show_icons=true&theme=merko" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wilkware&layout=compact" />
 </div>
 
