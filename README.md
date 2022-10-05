@@ -1,5 +1,7 @@
 ### Hi there, I'm Heiko 😄
 
+I am a passionate computer scientist by education and an avid smart home evangelist since the mid 2000s. 
+
 Feel free to file issues and pull-requests in any of the projects I maintain here. Contact me via email at `heiko@wilkware.de`. And if you use or like some of my open source contributions, please consider [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8816166) it.
 
 ### 🏆 Github Profile Trophy
