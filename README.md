@@ -6,7 +6,7 @@ Here is an overview of all my [repositories](https://wilkware.github.io).
 
 Feel free to file issues and pull-requests in any of the projects I maintain here. Contact me via email at `heiko@wilkware.de`. And if you use or like some of my open source contributions, please consider [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8816166) it.
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=Wilkware&countColor=%23ff9800&style=for-the-badge)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=Wilkware&countColor=%23ff9800&style=for-the-badge)](https://wilkware.de)
 [![ByMeACoffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/wilkware)
 
 ### 🏆 Github Profile Trophy
