@@ -26,7 +26,6 @@ jobs:
 
       - name: Create module status markdown
         run: |
-          set -x
           echo "| Modul | Version | Build | Typ | Repo |" > MODULE_STATUS.md
           echo "|-------|---------|-------|-----|------|" >> MODULE_STATUS.md
 
