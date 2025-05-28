@@ -21,28 +21,28 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 <!-- SYMCON MODULE START -->
 | Modul | Version | Build | Typ | Repo |
 |-------|---------|-------|-----|------|
-| Almanac | 5.3 | 20240724 | unbekannt | [Link](https://github.com/Wilkware/Almanac.git) |
-| BlinkHomeSystem | 1.9 | 20241029 | unbekannt | [Link](https://github.com/Wilkware/BlinkHomeSystem.git) |
-| ColorLoop | 1.1 | 20230224 | unbekannt | [Link](https://github.com/Wilkware/ColorLoop.git) |
-| ContactSensor | 3.0 | 20240908 | unbekannt | [Link](https://github.com/Wilkware/ContactSensor.git) |
-| HumiditySensor | 3.0 | 20221204 | unbekannt | [Link](https://github.com/Wilkware/HumiditySensor.git) |
-| LightAutomat | 7.2 | 20241220 | unbekannt | [Link](https://github.com/Wilkware/LightAutomat.git) |
-| LocalTuya2MQTT | 1.0 | 20250125 | unbekannt | [Link](https://github.com/Wilkware/LocalTuya2MQTT.git) |
-| MagicHomeController | 3.0 | 20221231 | unbekannt | [Link](https://github.com/Wilkware/MagicHomeController.git) |
-| PluggableSwitch | 1.1 | 20241118 | unbekannt | [Link](https://github.com/Wilkware/PluggableSwitch.git) |
-| Pollination | 3.0 | 20221007 | unbekannt | [Link](https://github.com/Wilkware/Pollination.git) |
-| PresenceDetector | 4.0 | 20240908 | unbekannt | [Link](https://github.com/Wilkware/PresenceDetector.git) |
-| Rfx2COM | 1.0 | 20250518 | unbekannt | [Link](https://github.com/Wilkware/Rfx2COM.git) |
-| RoomDisplay | 3.8 | 20250515 | unbekannt | [Link](https://github.com/Wilkware/RoomDisplay.git) |
-| ShutterActuator | 4.0 | 20240907 | unbekannt | [Link](https://github.com/Wilkware/ShutterActuator.git) |
-| TeslaPowerwall | 1.4 | 20240528 | unbekannt | [Link](https://github.com/Wilkware/TeslaPowerwall.git) |
-| TimerSwitch | 3.1 | 20250212 | unbekannt | [Link](https://github.com/Wilkware/TimerSwitch.git) |
-| Twinkly | 3.2 | 20230222 | unbekannt | [Link](https://github.com/Wilkware/Twinkly.git) |
-| UniversalTimer | 1.0 | 20220228 | unbekannt | [Link](https://github.com/Wilkware/UniversalTimer.git) |
-| UserMap | 1.0 | 20231206 | unbekannt | [Link](https://github.com/Wilkware/UserMap.git) |
-| WallThermostat | 2.0 | 20250209 | unbekannt | [Link](https://github.com/Wilkware/WallThermostat.git) |
-| WasteManagement | 4.4 | 20250527 | beta | [Link](https://github.com/Wilkware/WasteManagement.git) |
-| WeatherWarning | 2.0 | 20240813 | unbekannt | [Link](https://github.com/Wilkware/WeatherWarning.git) |
+| [Almanac](https://github.com/Wilkware/Almanac.git) | 5.3.20240724 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Almanac/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/Almanac/actions) |
+| [BlinkHomeSystem](https://github.com/Wilkware/BlinkHomeSystem.git) | 1.9.20241029 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/BlinkHomeSystem/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/BlinkHomeSystem/actions) |
+| [ColorLoop](https://github.com/Wilkware/ColorLoop.git) | 1.1.20230224 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/ColorLoop/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/ColorLoop/actions) |
+| [ContactSensor](https://github.com/Wilkware/ContactSensor.git) | 3.0.20240908 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/ContactSensor/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/ContactSensor/actions) |
+| [HumiditySensor](https://github.com/Wilkware/HumiditySensor.git) | 3.0.20221204 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/HumiditySensor/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/HumiditySensor/actions) |
+| [LightAutomat](https://github.com/Wilkware/LightAutomat.git) | 7.2.20241220 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/LightAutomat/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/LightAutomat/actions) |
+| [LocalTuya2MQTT](https://github.com/Wilkware/LocalTuya2MQTT.git) | 1.0.20250125 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/LocalTuya2MQTT/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/LocalTuya2MQTT/actions) |
+| [MagicHomeController](https://github.com/Wilkware/MagicHomeController.git) | 3.0.20221231 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/MagicHomeController/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/MagicHomeController/actions) |
+| [PluggableSwitch](https://github.com/Wilkware/PluggableSwitch.git) | 1.1.20241118 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/PluggableSwitch/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/PluggableSwitch/actions) |
+| [Pollination](https://github.com/Wilkware/Pollination.git) | 3.0.20221007 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Pollination/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/Pollination/actions) |
+| [PresenceDetector](https://github.com/Wilkware/PresenceDetector.git) | 4.0.20240908 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/PresenceDetector/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/PresenceDetector/actions) |
+| [Rfx2COM](https://github.com/Wilkware/Rfx2COM.git) | 1.0.20250518 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Rfx2COM/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/Rfx2COM/actions) |
+| [RoomDisplay](https://github.com/Wilkware/RoomDisplay.git) | 3.8.20250515 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/RoomDisplay/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/RoomDisplay/actions) |
+| [ShutterActuator](https://github.com/Wilkware/ShutterActuator.git) | 4.0.20240907 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/ShutterActuator/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/ShutterActuator/actions) |
+| [TeslaPowerwall](https://github.com/Wilkware/TeslaPowerwall.git) | 1.4.20240528 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/TeslaPowerwall/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/TeslaPowerwall/actions) |
+| [TimerSwitch](https://github.com/Wilkware/TimerSwitch.git) | 3.1.20250212 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/TimerSwitch/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/TimerSwitch/actions) |
+| [Twinkly](https://github.com/Wilkware/Twinkly.git) | 3.2.20230222 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Twinkly/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/Twinkly/actions) |
+| [UniversalTimer](https://github.com/Wilkware/UniversalTimer.git) | 1.0.20220228 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/UniversalTimer/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/UniversalTimer/actions) |
+| [UserMap](https://github.com/Wilkware/UserMap.git) | 1.0.20231206 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/UserMap/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/UserMap/actions) |
+| [WallThermostat](https://github.com/Wilkware/WallThermostat.git) | 2.0.20250209 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WallThermostat/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WallThermostat/actions) |
+| [WasteManagement](https://github.com/Wilkware/WasteManagement.git) | 4.4.20250527 | ![beta](https://img.shields.io/badge/beta-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WasteManagement/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WasteManagement/actions) |
+| [WeatherWarning](https://github.com/Wilkware/WeatherWarning.git) | 2.0.20240813 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WeatherWarning/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WeatherWarning/actions) |
 <!-- SYMCON MODULE END -->
 
 [![Version](https://img.shields.io/badge/Modul%20Version-7.2.20241220-orange.svg?style=flat-square)](https://github.com/Wilkware/LightAutomat)
