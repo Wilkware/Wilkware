@@ -1,9 +1,6 @@
 name: Symcon Module Status
 
-on:
-  schedule:
-    - cron: '0 6 * * *'  # täglich um 6 Uhr morgens
-  workflow_dispatch:      # manuell auslösbar
+on: [push, pull_request]
 
 jobs:
   update-status:
