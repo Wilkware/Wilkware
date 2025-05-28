@@ -32,7 +32,7 @@ jobs:
             git clone --depth=1 $url temp_repo
 
             echo "Tags found in $name:"
-            git -C temp_repo tag --sort=-creatordate | tee /dev/stderr
+            git -C temp_repo tag --sort=-creatordate
 
             if [ -f temp_repo/library.json ]; then
               version=$(jq -r '.version' temp_repo/library.json)
@@ -47,9 +47,17 @@ jobs:
               else
                 typ="unbekannt"
               fi
-              echo "| $name | $version | $build | $typ | [Link]($url) |" >> MODULE_STATUS.md
+              case "$typ" in
+                Stable) color="green" ;;
+                Beta)   color="yellow" ;;
+                Test)   color="red" ;;
+                *)      color="lightgrey" ;;
+              esac
+              echo "| [$name]($url) | $version.$build | ![$typ](https://img.shields.io/badge/$typ-$color) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/$name/actions) |" >> MODULE_STATUS.md
             else
-              echo "| $name | - | - | - | [Link]($url) |" >> MODULE_STATUS.md
+              echo "| [$name]($url) | $version.$build | ![$typ](https://img.shields.io/badge/$typ-$color) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/$name/actions) |" >> MODULE_STATUS.md
+
+            echo "| [$name]($url) | - | - | - |" >> MODULE_STATUS.md
             fi
             rm -rf temp_repo
           done

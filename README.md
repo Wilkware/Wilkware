@@ -16,6 +16,8 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wilkware&layout=compact" />
 </div>
 
+### 📦 Symcon Modul Status
+
 <!-- SYMCON MODULE START -->
 | Modul | Version | Build | Typ | Repo |
 |-------|---------|-------|-----|------|
@@ -42,6 +44,8 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 | WasteManagement | 4.4 | 20250527 | beta | [Link](https://github.com/Wilkware/WasteManagement.git) |
 | WeatherWarning | 2.0 | 20240813 | unbekannt | [Link](https://github.com/Wilkware/WeatherWarning.git) |
 <!-- SYMCON MODULE END -->
+
+[![Version](https://img.shields.io/badge/Modul%20Version-7.2.20241220-orange.svg?style=flat-square)](https://github.com/Wilkware/LightAutomat)
 
 <!--
 **Wilkware/Wilkware** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
