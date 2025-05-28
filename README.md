@@ -19,6 +19,28 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 <!-- SYMCON MODULE START -->
 | Modul | Version | Build | Typ | Repo |
 |-------|---------|-------|-----|------|
+| Almanac | 5.3 | 20240724 | unbekannt | [Link](https://github.com/Wilkware/Almanac.git) |
+| BlinkHomeSystem | 1.9 | 20241029 | unbekannt | [Link](https://github.com/Wilkware/BlinkHomeSystem.git) |
+| ColorLoop | 1.1 | 20230224 | unbekannt | [Link](https://github.com/Wilkware/ColorLoop.git) |
+| ContactSensor | 3.0 | 20240908 | unbekannt | [Link](https://github.com/Wilkware/ContactSensor.git) |
+| HumiditySensor | 3.0 | 20221204 | unbekannt | [Link](https://github.com/Wilkware/HumiditySensor.git) |
+| LightAutomat | 7.2 | 20241220 | unbekannt | [Link](https://github.com/Wilkware/LightAutomat.git) |
+| LocalTuya2MQTT | 1.0 | 20250125 | unbekannt | [Link](https://github.com/Wilkware/LocalTuya2MQTT.git) |
+| MagicHomeController | 3.0 | 20221231 | unbekannt | [Link](https://github.com/Wilkware/MagicHomeController.git) |
+| PluggableSwitch | 1.1 | 20241118 | unbekannt | [Link](https://github.com/Wilkware/PluggableSwitch.git) |
+| Pollination | 3.0 | 20221007 | unbekannt | [Link](https://github.com/Wilkware/Pollination.git) |
+| PresenceDetector | 4.0 | 20240908 | unbekannt | [Link](https://github.com/Wilkware/PresenceDetector.git) |
+| Rfx2COM | 1.0 | 20250518 | unbekannt | [Link](https://github.com/Wilkware/Rfx2COM.git) |
+| RoomDisplay | 3.8 | 20250515 | unbekannt | [Link](https://github.com/Wilkware/RoomDisplay.git) |
+| ShutterActuator | 4.0 | 20240907 | unbekannt | [Link](https://github.com/Wilkware/ShutterActuator.git) |
+| TeslaPowerwall | 1.4 | 20240528 | unbekannt | [Link](https://github.com/Wilkware/TeslaPowerwall.git) |
+| TimerSwitch | 3.1 | 20250212 | unbekannt | [Link](https://github.com/Wilkware/TimerSwitch.git) |
+| Twinkly | 3.2 | 20230222 | unbekannt | [Link](https://github.com/Wilkware/Twinkly.git) |
+| UniversalTimer | 1.0 | 20220228 | unbekannt | [Link](https://github.com/Wilkware/UniversalTimer.git) |
+| UserMap | 1.0 | 20231206 | unbekannt | [Link](https://github.com/Wilkware/UserMap.git) |
+| WallThermostat | 2.0 | 20250209 | unbekannt | [Link](https://github.com/Wilkware/WallThermostat.git) |
+| WasteManagement | 4.4 | 20250527 | beta | [Link](https://github.com/Wilkware/WasteManagement.git) |
+| WeatherWarning | 2.0 | 20240813 | unbekannt | [Link](https://github.com/Wilkware/WeatherWarning.git) |
 <!-- SYMCON MODULE END -->
 
 <!--
