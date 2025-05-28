@@ -1,6 +1,9 @@
 name: Symcon Module Status
 
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: '0 6 * * *' # Täglich um 6 Uhr morgens
+  workflow_dispatch:    # Manuell auslösbar
 
 jobs:
   update-status:
@@ -53,7 +56,7 @@ jobs:
                 TESTING)  color="red" ;;
                 *)        color="lightgrey" ;;
               esac
-              echo "| [$name]($url) | $version.$build | ![$typ](https://img.shields.io/badge/$typ-$color) | [![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/$name/actions) |" >> MODULE_STATUS.md
+              echo "| [$name]($url) | $version.$build | ![$typ](https://img.shields.io/badge/$typ-$color) | [![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?branch=main&label=Test)](https://github.com/Wilkware/$name/actions) |" >> MODULE_STATUS.md
             else
               echo "| [$name]($url) | - | - | - |" >> MODULE_STATUS.md
             fi
