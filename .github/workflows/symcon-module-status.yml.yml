@@ -57,10 +57,11 @@ jobs:
 
       - name: Update README.md with module status
         run: |
-          sed -i '/<!-- SYMCON MODULE START -->/,/<!-- SYMCON MODULE END -->/c\
-<!-- MODULE STATUS START -->\
-'"$(cat MODULE_STATUS.md)"'\
-<!-- MODULE STATUS END -->' README.md
+            content=$(cat MODULE_STATUS.md)
+            sed -i "/<!-- SYMCON MODULE START -->/,/<!-- SYMCON MODULE END -->/c\
+            <!-- SYMCON MODULE START -->\
+            $content\
+            <!-- SYMCON MODULE END -->" README.md
 
       - name: Commit and push changes
         run: |
