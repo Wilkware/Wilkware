@@ -26,6 +26,7 @@ jobs:
 
       - name: Create module status markdown
         run: |
+          set -x
           echo "| Modul | Version | Build | Typ | Repo |" > MODULE_STATUS.md
           echo "|-------|---------|-------|-----|------|" >> MODULE_STATUS.md
 
@@ -33,7 +34,7 @@ jobs:
             name=$(echo $repo | jq -r '.name')
             url=$(echo $repo | jq -r '.clone_url')
 
-            echo "Cloning $name" >> $GITHUB_OUTPUT
+            echo "Cloning $name"
             git clone --depth=1 $url temp_repo
 
             echo "Tags found in $name:"
