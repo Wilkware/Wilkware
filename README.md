@@ -17,6 +17,8 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 </div>
 
 <!-- SYMCON MODULE START -->
+| Modul | Version | Build | Typ | Repo |
+|-------|---------|-------|-----|------|
 <!-- SYMCON MODULE END -->
 
 <!--
