@@ -15,13 +15,14 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
   <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=Wilkware&count_private=true&include_all_commits=true&show_icons=true" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wilkware&layout=compact" />
 </div>
+<br/>
 
 ### 📦 Symcon Modul Status
 
 <!-- SYMCON MODULE START -->
 | Modul | Version | Build | Typ | Repo |
 |-------|---------|-------|-----|------|
-| [Almanac](https://github.com/Wilkware/Almanac.git) | 5.3.20240724 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Almanac/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/Almanac/actions) |
+| [Almanac](https://github.com/Wilkware/Almanac.git) | 5.3.20240724 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | [![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/Almanac/style.yml?branch=main&label=CheckStyle&style=flat)](https://github.com/Wilkware/Almanac/actions) |
 | [BlinkHomeSystem](https://github.com/Wilkware/BlinkHomeSystem.git) | 1.9.20241029 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/BlinkHomeSystem/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/BlinkHomeSystem/actions) |
 | [ColorLoop](https://github.com/Wilkware/ColorLoop.git) | 1.1.20230224 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/ColorLoop/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/ColorLoop/actions) |
 | [ContactSensor](https://github.com/Wilkware/ContactSensor.git) | 3.0.20240908 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/ContactSensor/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/ContactSensor/actions) |
@@ -42,10 +43,8 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 | [UserMap](https://github.com/Wilkware/UserMap.git) | 1.0.20231206 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/UserMap/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/UserMap/actions) |
 | [WallThermostat](https://github.com/Wilkware/WallThermostat.git) | 2.0.20250209 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WallThermostat/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WallThermostat/actions) |
 | [WasteManagement](https://github.com/Wilkware/WasteManagement.git) | 4.4.20250527 | ![beta](https://img.shields.io/badge/beta-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WasteManagement/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WasteManagement/actions) |
-| [WeatherWarning](https://github.com/Wilkware/WeatherWarning.git) | 2.0.20240813 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WeatherWarning/style.yml?branch=main&label=CheckStyle&style=plastic)](https://github.com/Wilkware/WeatherWarning/actions) |
+| [WeatherWarning](https://github.com/Wilkware/WeatherWarning.git) | 2.0.20240813 | ![unbekannt](https://img.shields.io/badge/unbekannt-lightgrey) | ![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WeatherWarning/style.yml?branch=main&label=CheckStyle&style=plastic)(https://github.com/Wilkware/WeatherWarning/actions) |
 <!-- SYMCON MODULE END -->
-
-[![Version](https://img.shields.io/badge/Modul%20Version-7.2.20241220-orange.svg?style=flat-square)](https://github.com/Wilkware/LightAutomat)
 
 <!--
 **Wilkware/Wilkware** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
