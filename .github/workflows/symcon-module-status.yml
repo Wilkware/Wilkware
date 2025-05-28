@@ -3,7 +3,7 @@ name: Symcon Module Status
 on: [push, pull_request]
 
 jobs:
-  update-status:
+  build:
     runs-on: ubuntu-latest
 
     steps:
