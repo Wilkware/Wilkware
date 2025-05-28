@@ -15,9 +15,9 @@ jobs:
 
       - name: Get list of repos from GitHub API
         run: |
-          curl -s \
+          curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/users/Wilkware/repos?per_page=100" > repos.json
-          cat repos.json | jq '.[] | select(.name | test("symcon-|modul-")) | {name: .name, clone_url: .clone_url}' > filtered_repos.json
+          cat repos.json | jq '.[] | select((.description // "") | test("Symcon Modul")) | {name: .name, clone_url: .clone_url}' > filtered_repos.json
 
       - name: Create module status markdown
         run: |
