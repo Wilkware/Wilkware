@@ -1,0 +1,71 @@
+name: Symcon Module Status
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # täglich um 6 Uhr morgens
+  workflow_dispatch:      # manuell auslösbar
+
+jobs:
+  update-status:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Get list of repos from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/users/Wilkware/repos?per_page=100" > repos.json
+          cat repos.json | jq '.[] | select(.name | test("symcon-|modul-")) | {name: .name, clone_url: .clone_url}' > filtered_repos.json
+
+      - name: Create module status markdown
+        run: |
+          echo "| Modul | Version | Build | Typ | Repo |" > MODULE_STATUS.md
+          echo "|-------|---------|-------|-----|------|" >> MODULE_STATUS.md
+
+          cat filtered_repos.json | jq -c '.' | while read repo; do
+            name=$(echo $repo | jq -r '.name')
+            url=$(echo $repo | jq -r '.clone_url')
+
+            echo "Cloning $name"
+            git clone --depth=1 $url temp_repo
+            if [ -f temp_repo/library.json ]; then
+              version=$(jq -r '.version' temp_repo/library.json)
+              build=$(jq -r '.build' temp_repo/library.json)
+              tag=$(git -C temp_repo tag --sort=-creatordate | head -n 1)
+              if [[ $tag == *stable ]]; then
+                typ="stable"
+              elif [[ $tag == *beta ]]; then
+                typ="beta"
+              elif [[ $tag == *testing ]]; then
+                typ="testing"
+              else
+                typ="unbekannt"
+              fi
+              echo "| $name | $version | $build | $typ | [Link]($url) |" >> MODULE_STATUS.md
+            else
+              echo "| $name | - | - | - | [Link]($url) |" >> MODULE_STATUS.md
+            fi
+            rm -rf temp_repo
+          done
+
+      - name: Update README.md with module status
+        run: |
+          sed -i '/<!-- SYMCON MODULE START -->/,/<!-- SYMCON MODULE END -->/c\
+<!-- MODULE STATUS START -->\
+'"$(cat MODULE_STATUS.md)"'\
+<!-- MODULE STATUS END -->' README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update module status in README [skip ci]" || echo "No changes to commit"
+          git push

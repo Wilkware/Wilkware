@@ -16,6 +16,9 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wilkware&layout=compact" />
 </div>
 
+<!-- SYMCON MODULE START -->
+<!-- SYMCON MODULE END -->
+
 <!--
 **Wilkware/Wilkware** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
