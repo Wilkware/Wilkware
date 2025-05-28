@@ -33,7 +33,7 @@ jobs:
             name=$(echo $repo | jq -r '.name')
             url=$(echo $repo | jq -r '.clone_url')
 
-            echo "Cloning $name"
+            echo "Cloning $name" >> $GITHUB_OUTPUT
             git clone --depth=1 $url temp_repo
 
             echo "Tags found in $name:"
