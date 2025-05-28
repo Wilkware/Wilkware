@@ -15,7 +15,7 @@ jobs:
 
       - name: Get list of repos from GitHub API
         run: |
-          curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          curl -s \
             "https://api.github.com/users/Wilkware/repos?per_page=100" > repos.json
           cat repos.json | jq '.[] | select(.name | test("symcon-|modul-")) | {name: .name, clone_url: .clone_url}' > filtered_repos.json
 
