@@ -35,6 +35,10 @@ jobs:
 
             echo "Cloning $name"
             git clone --depth=1 $url temp_repo
+
+            echo "Tags found in $name:"
+            git -C temp_repo tag --sort=-creatordate | tee /dev/stderr
+
             if [ -f temp_repo/library.json ]; then
               version=$(jq -r '.version' temp_repo/library.json)
               build=$(jq -r '.build' temp_repo/library.json)
