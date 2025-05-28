@@ -3,7 +3,7 @@ name: Symcon Module Status
 on: [push, pull_request]
 
 jobs:
-  build:
+  update-status:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,10 +14,8 @@ jobs:
         run: sudo apt-get install -y jq
 
       - name: Get list of repos from GitHub API
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+          curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/users/Wilkware/repos?per_page=100" > repos.json
           cat repos.json | jq '.[] | select(.name | test("symcon-|modul-")) | {name: .name, clone_url: .clone_url}' > filtered_repos.json
 
