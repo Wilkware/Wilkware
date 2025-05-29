@@ -33,6 +33,7 @@ jobs:
 
             echo "Cloning $name"
             git clone --depth=1 $url temp_repo
+            git -C temp_repo fetch --tags
 
             echo "Tags found in $name:"
             git -C temp_repo tag --sort=-creatordate
