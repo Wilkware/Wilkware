@@ -24,8 +24,8 @@ jobs:
 
       - name: Create module status markdown
         run: |
-          echo "| Modul | Version | Status | Tests |" > MODULE_STATUS.md
-          echo "|-------|---------|--------|-------|" >> MODULE_STATUS.md
+          echo "| Modul | Version | Kompatibilität | Status | Tests |" > MODULE_STATUS.md
+          echo "|-------|---------|----------------|--------|-------|" >> MODULE_STATUS.md
 
           cat filtered_repos.json | jq -c '.' | while read repo; do
             name=$(echo $repo | jq -r '.name')
@@ -41,6 +41,7 @@ jobs:
             if [ -f temp_repo/library.json ]; then
               # version=$(jq -r '.version' temp_repo/library.json)
               # build=$(jq -r '.build' temp_repo/library.json)
+              symcon=$(jq -r '.compatibility.version' temp_repo/library.json)
               tag=$(git -C temp_repo tag --sort=-creatordate | head -n 1)
               version=${tag%%-*}
               if [[ $tag == *stable ]]; then
@@ -64,9 +65,9 @@ jobs:
               elif [ -f "temp_repo/.github/workflows/ci.yml" ]; then
                 workflow_badge="[![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/Wilkware/$name/actions)"
               fi
-              echo "| [$name]($url) | $version | ![$typ](https://img.shields.io/badge/$typ-$color?style=flat-square&format=png) | $workflow_badge |" >> MODULE_STATUS.md
+              echo "| [$name]($url) | $version | $symcon | ![$typ](https://img.shields.io/badge/$typ-$color?style=flat-square&format=png) | $workflow_badge |" >> MODULE_STATUS.md
             else
-              echo "| [$name]($url) | - | - | - |" >> MODULE_STATUS.md
+              echo "| [$name]($url) | - | - | - | - |" >> MODULE_STATUS.md
             fi
             rm -rf temp_repo
           done
