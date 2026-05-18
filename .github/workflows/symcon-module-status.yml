@@ -27,49 +27,54 @@ jobs:
           echo "| Modul | Version | Kompatibilität | Status | Tests |" > MODULE_STATUS.md
           echo "|-------|---------|----------------|--------|-------|" >> MODULE_STATUS.md
 
-          cat filtered_repos.json | jq -c '.' | while read repo; do
-            name=$(echo $repo | jq -r '.name')
-            url=$(echo $repo | jq -r '.clone_url')
+          cat filtered_repos.json | jq -c '.' | while read -r repo; do
+          name=$(echo "$repo" | jq -r '.name')
+          url=$(echo "$repo" | jq -r '.clone_url')
 
-            echo "Cloning $name"
-            git clone --depth=1 $url temp_repo
-            git -C temp_repo fetch --tags
+          echo "Cloning $name"
 
-            echo "Tags found in $name:"
-            git -C temp_repo tag --sort=-creatordate
+          TEMP_DIR=$(mktemp -d)
 
-            if [ -f temp_repo/library.json ]; then
-              # version=$(jq -r '.version' temp_repo/library.json)
-              # build=$(jq -r '.build' temp_repo/library.json)
-              symcon=$(jq -r '.compatibility.version' temp_repo/library.json)
-              tag=$(git -C temp_repo tag --sort=-creatordate | head -n 1)
-              version=${tag%%-*}
-              if [[ $tag == *stable ]]; then
-                typ="STABLE"
-              elif [[ $tag == *beta ]]; then
-                typ="BETA"
-              elif [[ $tag == *testing ]]; then
-                typ="TESTING"
-              else
-                typ="INTERNAL"
-              fi
-              case "$typ" in
-                STABLE)   color="green" ;;
-                BETA)     color="yellow" ;;
-                TESTING)  color="red" ;;
-                *)        color="lightgrey" ;;
-              esac
-              workflow_badge="-"
-              if [ -f "temp_repo/.github/workflows/style.yml" ]; then
-                workflow_badge="[![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?label=Style&style=flat-square)](https://github.com/Wilkware/$name/actions)"
-              elif [ -f "temp_repo/.github/workflows/ci.yml" ]; then
-                workflow_badge="[![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/Wilkware/$name/actions)"
-              fi
-              echo "| [$name]($url) | $version | ![Symcon](https://img.shields.io/badge/Symcon-$symcon-blue.svg?style=flat-square) | ![$typ](https://img.shields.io/badge/$typ-$color?style=flat-square&format=png) | $workflow_badge |" >> MODULE_STATUS.md
+          git clone --depth=1 "$url" "$TEMP_DIR"
+          git -C "$TEMP_DIR" fetch --tags
+
+          echo "Tags found in $name:"
+          git -C "$TEMP_DIR" tag --sort=-creatordate
+
+          if [ -f "$TEMP_DIR/library.json" ]; then
+            symcon=$(jq -r '.compatibility.version' "$TEMP_DIR/library.json")
+            tag=$(git -C "$TEMP_DIR" tag --sort=-creatordate | head -n 1)
+            version=${tag%%-*}
+
+            if [[ "$tag" == *stable ]]; then
+              typ="STABLE"
+            elif [[ "$tag" == *beta ]]; then
+              typ="BETA"
+            elif [[ "$tag" == *testing ]]; then
+              typ="TESTING"
             else
-              echo "| [$name]($url) | - | - | - | - |" >> MODULE_STATUS.md
+              typ="INTERNAL"
             fi
-            rm -rf temp_repo
+
+            case "$typ" in
+              STABLE)   color="green" ;;
+              BETA)     color="yellow" ;;
+              TESTING)  color="red" ;;
+              *)        color="lightgrey" ;;
+            esac
+
+            workflow_badge="-"
+            if [ -f "$TEMP_DIR/.github/workflows/style.yml" ]; then
+              workflow_badge="[![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/style.yml?label=Style&style=flat-square)](https://github.com/Wilkware/$name/actions)"
+            elif [ -f "$TEMP_DIR/.github/workflows/ci.yml" ]; then
+              workflow_badge="[![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/$name/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/Wilkware/$name/actions)"
+            fi
+
+            echo "| [$name]($url) | $version | ![Symcon](https://img.shields.io/badge/Symcon-$symcon-blue.svg?style=flat-square) | ![$typ](https://img.shields.io/badge/$typ-$color?style=flat-square&format=png) | $workflow_badge |" >> MODULE_STATUS.md
+          else
+            echo "| [$name]($url) | - | - | - | - |" >> MODULE_STATUS.md
+          fi
+          rm -rf "$TEMP_DIR"
           done
 
       - name: Update README.md with module status
