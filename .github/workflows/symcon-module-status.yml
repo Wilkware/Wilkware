@@ -74,6 +74,8 @@ jobs:
           else
             echo "| [$name]($url) | - | - | - | - |" >> MODULE_STATUS.md
           fi
+          sync
+          sleep 1
           rm -rf "$TEMP_DIR"
           done
 
