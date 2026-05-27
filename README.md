@@ -9,13 +9,8 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=Wilkware&countColor=%23ff9800&style=for-the-badge)](https://wilkware.de)
 [![ByMeACoffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/wilkware)
 
-### 🏆 Github Profile Trophy
-<img width=800 src="https://github-profile-trophy.vercel.app/?username=Wilkware&column=8&margin-w=15"/>
-<div>
-  <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=Wilkware&count_private=true&include_all_commits=true&show_icons=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wilkware&layout=compact" />
-</div>
-<br/>
+### 🏆 Github Trophy
+<img src="https://github-trophy.vercel.app/?username=Wilkware&margin-w=15"/>
 
 ### 📦 Symcon Modul Status
 
