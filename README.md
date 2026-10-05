@@ -53,11 +53,11 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 ### 🎨 Symcon Visualization Status
 
 <!-- SYMCON VISU START -->
-| Name | Typ | Version | Kompatibilität |
-|------|-----|---------|----------------|
-| [OEWSkin](https://github.com/Wilkware/OEWSkin.git) | ![WebFront-Skin](https://img.shields.io/badge/Symcon-WebFront--Skin-red.svg?style=flat-square) | v1.0.20200602 | ![Symcon](https://img.shields.io/badge/Symcon-6.4-blue.svg?style=flat-square) |
-| [WwxSkin](https://github.com/Wilkware/WwxSkin.git) | ![WebFront-Skin](https://img.shields.io/badge/Symcon-WebFront--Skin-red.svg?style=flat-square) | v1.6.20240703 | ![Symcon](https://img.shields.io/badge/Symcon-6.4-blue.svg?style=flat-square) |
-| [WwxTileVisu](https://github.com/Wilkware/WwxTileVisu.git) | ![TileVisu-Skin](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square) | v1.3.20250829 | ![Symcon](https://img.shields.io/badge/Symcon-8.1-blue.svg?style=flat-square) |
+| Name | Version | Kompatibilität | Typ |
+|------|---------|----------------|-----|
+| [OEWSkin](https://github.com/Wilkware/OEWSkin.git) | v1.0.20200602 | ![Symcon](https://img.shields.io/badge/Symcon-6.4-blue.svg?style=flat-square) | ![WebFront-Skin](https://img.shields.io/badge/Symcon-WebFront--Skin-red.svg?style=flat-square) |
+| [WwxSkin](https://github.com/Wilkware/WwxSkin.git) | v1.6.20240703 | ![Symcon](https://img.shields.io/badge/Symcon-6.4-blue.svg?style=flat-square) | ![WebFront-Skin](https://img.shields.io/badge/Symcon-WebFront--Skin-red.svg?style=flat-square) |
+| [WwxTileVisu](https://github.com/Wilkware/WwxTileVisu.git) | v1.3.20250829 | ![Symcon](https://img.shields.io/badge/Symcon-8.1-blue.svg?style=flat-square) | ![TileVisu-Skin](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square) |
 <!-- SYMCON VISU END -->
 
 <!--
