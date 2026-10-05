@@ -47,6 +47,11 @@ Feel free to file issues and pull-requests in any of the projects I maintain her
 | [WeatherWarning](https://github.com/Wilkware/WeatherWarning.git) | v3.1.20250802 | ![Symcon](https://img.shields.io/badge/Symcon-6.4-blue.svg?style=flat-square) | ![STABLE](https://img.shields.io/badge/STABLE-green?style=flat-square&format=png) | [![Action](https://img.shields.io/github/actions/workflow/status/Wilkware/WeatherWarning/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/Wilkware/WeatherWarning/actions) |
 <!-- SYMCON MODULE END -->
 
+### 🎨 Symcon Visualization Status
+
+<!-- SYMCON VISU START -->
+<!-- SYMCON VISU END -->
+
 <!--
 **Wilkware/Wilkware** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
