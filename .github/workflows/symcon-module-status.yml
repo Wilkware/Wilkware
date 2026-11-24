@@ -138,3 +138,12 @@ jobs:
           git add README.md
           git commit -m "Update module status in README [skip ci]" || echo "No changes to commit"
           git push
+
+      - name: Notification
+        if: always()
+        run: |
+          curl -s \
+            -H "Title: ${{ github.workflow }}" \
+            -H "Tags: ${{ job.status == 'success' && 'white_check_mark' || 'x' }}" \
+            -d "Status: ${{ job.status }} – gelaufen um $(TZ=Europe/Berlin date '+%d.%m. %H:%M')" \
+            "https://ntfy.sh/${{ secrets.NTFY_TOPIC }}"
